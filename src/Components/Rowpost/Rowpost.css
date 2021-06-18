@@ -15,6 +15,8 @@
     max-height: 250px;
     margin-right: 10px;
     cursor: pointer;
+    display: block;
+    
 }
 .smallposter{
     max-height: 150px;
@@ -30,4 +32,39 @@
     transform: scale(1.09);
     background-color:#000;
     opacity:0.6;
+}
+.p-image{
+    position: relative;
+}
+.image-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.image-overlay:hover{
+    opacity: 1;
+}
+.you-icon i{
+    cursor: pointer;
+}
+.playbtn{
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.5);
+    cursor: pointer;
+    margin-right: 1rem;
 }

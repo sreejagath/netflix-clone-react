@@ -17,7 +17,7 @@ function Banner() {
             <div className="content">
                 <h1 className='title'> {movie ? movie.title :""} </h1>
                 <div className="banner_buttons">
-                    <button className="button">Play</button>
+                    <button className="button"><p><i class="fab fa-youtube"></i> Play</p></button>
                     <button className="button">My List</button>
                 </div>
                 <h1 className="description">{movie?movie.overview:""}</h1>

@@ -38,11 +38,20 @@ function Rowpost(props) {
             <h2>{props.title}</h2>
             <div className="posters">
                 {movies.map((obj)=>
-                    <img onClick={()=>handleMovie(obj.id)} className={props.isSmall ? 'smallposter': "poster"} src={`${imgUrl+obj.backdrop_path}`} alt="Poster" />
+                <div className='p-image'>
+                <img  className={props.isSmall ? 'smallposter': "poster"} src={`${imgUrl+obj.backdrop_path}`} alt="Poster" />
+                    <div className='image-overlay'>
+                    <div className="you-icon"><i onClick={()=>handleMovie(obj.id)} class="fab fa-youtube fa-2x"></i></div>
+                    <div className="play"><button className='playbtn'> Play </button> </div>
+                    </div>
+                    </div>
 )}
                 </div>
+
+
                {urlId && <Youtube opts={opts} videoId={urlId.key}/> }
-        </div>
+               </div>
+
     )
 }
 
