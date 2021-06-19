@@ -37,7 +37,7 @@ function Rowpost(props) {
         <div className="row">
             <h2>{props.title}</h2>
             <div className="posters">
-                {movies.map((obj)=>
+            {movies.map((obj)=>
                 <div className='p-image'>
                 <img  className={props.isSmall ? 'smallposter': "poster"} src={`${imgUrl+obj.backdrop_path}`} alt="Poster" />
                     <div className='image-overlay'>

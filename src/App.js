@@ -10,8 +10,7 @@ function App() {
   return (
     <div className="App">
       <Navbar 
-     title={['Action','Drama','Crime']}>
-        
+     url={action,drama,crime} title={['Action','Drama','Crime']}>
       </Navbar>
       <Banner/>
       <Rowpost url={originals} title='Netflix Orginals'/>
