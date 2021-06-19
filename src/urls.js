@@ -7,4 +7,3 @@ export const crime = `discover/movie?api_key=${API_KEY}&with_genres=80`
 export const horror = `discover/movie?api_key=${API_KEY}&with_genres=10402`
 export const romance = `discover/movie?api_key=${API_KEY}&with_genres=10749`
 export const scifi = `discover/movie?api_key=${API_KEY}&with_genres=878`
-
