@@ -1,0 +1,54 @@
+.footer-class{
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+    padding: 20px;
+    display: block;
+    justify-content: space-between;
+    background-color: #111;
+}
+.link {
+    padding: 50px;
+    width: 100%;
+  }
+  
+  .sub-links ul {
+      margin-top: 20px;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-gap: 20px;
+    
+    grid-template-columns: repeat(4, 1fr);
+   
+  }
+  
+  .sub-links a {
+    color: rgb(122, 112, 112);
+    text-decoration: none;
+  }
+  
+  .sub-links a:hover {
+    color: rgb(122, 112, 112);
+    text-decoration: underline;
+  }
+  
+  .logos a{
+    padding: 10px;
+    
+  }
+  .logos a i{
+      color: white;
+  }
+  
+  .logo {
+    color: rgb(122, 112, 112);
+  }
+  
+  .footer-sec{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+  }

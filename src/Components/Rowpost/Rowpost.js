@@ -41,7 +41,7 @@ function Rowpost(props) {
                 <div className='p-image'>
                 <img  className={props.isSmall ? 'smallposter': "poster"} src={`${imgUrl+obj.backdrop_path}`} alt="Poster" />
                     <div className='image-overlay'>
-                    <div className="you-icon"><i onClick={()=>handleMovie(obj.id)} class="fab fa-youtube fa-2x"></i></div>
+                    <div className="you-icon"><i onClick={()=>handleMovie(obj.id)} class="fab fa-youtube fa-3x"></i></div>
                     <div className="play"><button className='playbtn'> Play </button> </div>
                     </div>
                     </div>
