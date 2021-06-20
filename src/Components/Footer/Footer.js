@@ -31,8 +31,9 @@ function Footer() {
     <br></br>
     <div className="footer-sec">
     <footer>
-      <p> <span class="copyright">&copy;</span> 1997-2018 Netflix, Inc.</p>
-      <p>Carlos Avila <span class="copyright">&copy;</span> 2018</p>
+      <p> <span class="copyright">&copy;</span> 1997-2021 Netflix, Inc.</p>
+      <p>Carlos Avila <span class="copyright">&copy;</span> 2021</p>
+      <p>Created By Jagal R Nath</p>
     </footer>
     </div>
         </div>
