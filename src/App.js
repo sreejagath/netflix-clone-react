@@ -1,23 +1,49 @@
 import React from 'react'
 import './App.css'
-import Banner from './Components/Banner/Banner'
-import Footer from './Components/Footer/Footer'
+import {Route,Link} from 'react-router-dom'
+import Home from './Sections/Home/Home'
+import Actionpage from './Sections/Home/Action'
+import Crime from './Sections/Home/Crime'
+import Horror from './Sections/Home/Horror'
+import Orginals from './Sections/Home/Orginals'
+import Drama from './Sections/Home/Drama'
+import Romance from './Sections/Home/Romance'
+import Scifi from './Sections/Home/Scifi'
 import Navbar from './Components/Navbar/Navbar'
-import Rowpost from './Components/Rowpost/Rowpost'
-import {action,crime,drama,horror,originals,romance,scifi} from './urls'
+import Footer from './Components/Footer/Footer'
+import None from './Sections/Home/None'
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Banner/>
-      <Rowpost url={originals} title='Netflix Orginals'/>
-      <Rowpost url={action} title='Action' isSmall/>
-      <Rowpost url={drama} title='Drama' isSmall/>
-      <Rowpost url={crime} title='Crime' isSmall/>
-      <Rowpost url={horror} title='Horror' isSmall/>
-      <Rowpost url={romance} title='Romance' isSmall/>
-      <Rowpost url={scifi} title='Science Fiction' isSmall/>
+       <Navbar/>
+      <Route exact path='/'>
+      <Home/>
+      </Route>
+      <Route path='/action'>
+        <Actionpage/>
+      </Route>
+      <Route path='/crime'>
+      <Crime/>
+      </Route>
+      <Route path='/horror'>
+        <Horror/>
+      </Route>
+      <Route path='/nflixorginals'>
+        <Orginals/>
+      </Route>
+      <Route path='/drama'>
+        <Drama/>
+      </Route>
+      <Route path='/romance'>
+        <Romance/>
+      </Route>
+      <Route path='/scifi'>
+        <Scifi/>
+      </Route>
+      <Route path='/none'>
+        <None/>
+      </Route>
       <Footer/>
     </div>
   );
