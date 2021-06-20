@@ -1,7 +1,7 @@
 .footer-class{
     position:relative;
     bottom: 0;
-    width: 100%;
+    width: 95%;
     height: 350px;
     padding: 20px;
     display: block;
@@ -10,7 +10,7 @@
 }
 .link {
     padding: 50px;
-    width: 100%;
+    width: 90%;
   }
   
   .sub-links ul {
